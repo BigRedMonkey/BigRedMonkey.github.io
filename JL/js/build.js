@@ -24,11 +24,11 @@ function(t) {
 		for (var s = [], i = 0; i < Math.ceil(t); i++) s.push(i);
 		return s
 	});
-	for (var n = !0, a = !0, r = 0; r < casees.length; r++) {
-		casees[r].id = "miaov_" + (r + 1), casees[r].isDisplay && (n = !1);
-		for (var o = 0; o < casees[r].caseList.length; o++) casees[r].caseList[o].id = casees[r].id + "_" + (o + 1), casees[r].caseList[o].initShow && (a = !0)
-	}
-	n && (casees[0].isDisplay = !0), a && (casees[0].caseList[0].initShow = !0);
+//	for (var n = !0, a = !0, r = 0; r < casees.length; r++) {
+//		casees[r].id = "miaov_" + (r + 1), casees[r].isDisplay && (n = !1);
+//		for (var o = 0; o < casees[r].caseList.length; o++) casees[r].caseList[o].id = casees[r].id + "_" + (o + 1), casees[r].caseList[o].initShow && (a = !0)
+//	}
+//	n && (casees[0].isDisplay = !0), a && (casees[0].caseList[0].initShow = !0);
 	var l = Math.ceil(skills.skillsClassify.length / 3);
 	skills.pageArr = [];
 	for (var c = 0, r = 0; r < l; r++) skills.pageArr = skills.pageArr.concat([skills.skillsClassify.slice(c, c + 3)]), c += 3;
@@ -64,7 +64,7 @@ function(t) {
 		userInfo: userInfo,
 		skills: skills,
 		timeAxis: timeAxisArr,
-		casees: casees,
+//		casees: casees,
 		projects: projects
 	};
 	"red" === theme.theme ? document.body.id = "red" : "blue" === theme.theme && (document.body.id = "blue");
@@ -249,7 +249,7 @@ function(t) {
 		var s = this,
 			i = s.$helpers,
 			n = s.$each,
-			a = t.casees,
+//			a = t.casees,
 			r = (t.$value, t.$index, s.$string),
 			o = function(i, n) {
 				n = n || t;
@@ -425,7 +425,7 @@ function(t) {
 			e = f.parents(e, ".case_li1");
 			var o = e.getAttribute("_id");
 			if (o === D) return;
-			var c = i(casees, o),
+//			var c = i(casees, o),
 				u = v("case_right_temp", c);
 			setTimeout(function() {
 				Y.innerHTML = u
