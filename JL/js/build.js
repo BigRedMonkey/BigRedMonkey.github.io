@@ -123,7 +123,7 @@ function(t) {
 			}, i
 		}
 		function c(t) {
-			var e = "{Template Error}",
+			var e = "",
 				s = t.stack || "";
 			if (s) s = s.split("\n").slice(0, 2).join("\n");
 			else for (var i in t) s += "<" + i + ">\n" + t[i] + "\n\n";
